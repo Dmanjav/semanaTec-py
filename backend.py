@@ -5,8 +5,10 @@ import joblib
 from werkzeug.utils import secure_filename
 import csv
 
+# Cargar modelo
 dt = joblib.load('./static/dt.joblib')
 
+# Generar el servidor 
 app = Flask(__name__)
 CORS(app)
 
